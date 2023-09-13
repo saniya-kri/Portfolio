@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.pad0 {
+    padding: 0px;
+}
+.padt50{
+    padding-top: 50px;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    text-align: center;
+    position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 0px 20px;
+}
+.navbar li{
+    padding: 20px 0px;
+    display: inline-block;
+}
+.navbar span a{
+    color:rgb(180, 63, 63)!important;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: -1;
+    opacity: 0.4;
+}
+.about-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 400px;
+}
+.about-bg::before{
+    content: '';
+    height:80%;
+    width: 100%;
+    background: url('../img/backbg.jpg') no-repeat;
+    background-size:cover;
+    position: absolute;
+    z-index: -1;
+    opacity:0.89;
+    top:0px;
+    left: 0px;
+    background-attachment: fixed;
+}
+.about-bg h1{
+    font-weight: 900;
+    color: #322c2c;
+    
+}
+.about-bg h1:hover{
+    color: rgb(81, 69, 72);
+    transition: all 0.9s ease-in-out;
+    text-decoration: underline;
+}
+
+/* about me section */
+
+.about-me{
+  margin:75px;
+}
+.about-me h3{
+    padding:10px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.profile {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+
+.profile img{
+  width:220px;
+  height: 100%;
+}
+
+/* detail */
+
+.detail{
+    padding:10px;
+}
+
+.detail a{
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.detail i{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+.detail i:hover{
+    margin-left:5px ;
+    transition: all 0.4s ease-in-out
+}
+.client{
+    padding-left: 0px;
+}
+.client span i{
+  display: inline-block;
+  font-size: 3rem;
+  color:rgb(162, 93, 56);
+  width: 40px;
+  padding-right: 10px;
+}
+.client span a{
+    font-size: 2.5rem;
+    color: #322c2c;
+}
+.client span p{
+  padding-left: 15px;
+}
+
+/* detail-sec */
+
+.detail-sec{
+    padding: 10px;
+}
+.detail-sec a{
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.detail-sec i{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+.detail-sec i:hover{
+    margin-left:5px ;
+    transition: all 0.4s ease-in-out
+}
+.project{
+    padding-left: 0px;
+}
+.project span i{
+  display: inline-block;
+  font-size: 3rem;
+  color:rgb(162, 93, 56);
+  width: 40px;
+  padding-right: 10px;
+}
+.project span a{
+    font-size: 2.5rem;
+    color: #322c2c;
+}
+.project span p{
+  padding-left: 15px;
+}
+
+/* services-section */
+.services{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.services h2{
+    font-weight: 800;
+    color: rgb(27, 27, 79);
+    padding-bottom: 10px;
+}
+.para{
+    color: #a8a8a8;
+}
+
+/* card */
+
+.card{
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.5s ease-in-out;
+}
+.card i{
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(180, 116, 31);
+    border-radius: 100%;
+  background-color: #efefef;
+}
+.card h5{
+  font-weight: 800; 
+  color: #454444;  
+}
+.card p{
+    font-size: 1.3rem;
+}
+.card-bg{
+    padding-top: 50px;
+}
+
+/* contact-me */
+
+.Contact{
+    padding-bottom: 40px;
+}
+.contact-sc{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contact-sc h2{
+    font-weight: 800;
+    color: rgb(27, 27, 79);
+}
+
+.para{
+   padding-bottom:25px ;
+   color: #999;
+}
+
+.social{
+    text-align: center;
+    padding:25px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+.social i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(61, 61, 123);
+    font-size: 1.8rem;
+    border: 1px solid #dfdfdf;
+    background-color:  #ededed;
+    border-radius: 100%;
+    
+}
+
+ .social a{
+    padding-inline: 6px;
+} 
+
+.social i:hover{
+        transition: all 0.5s ease-in-out;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+         cursor: pointer;
+}
+.social h4{
+   font-weight: 700;
+   color: #322c2c;
+   padding: 15px;
+} 
+.info2{
+    padding:10px ;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+/* input-box */
+
+.info-sectn{
+    padding-top: 18px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.info-sectn input{
+    padding: 20px;
+}
+
+.msg-form input{
+    padding: 60px;
+}
+
+.info-sectn input[type="submit"]{
+    background-color: rgb(98, 98, 177);
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    height: 44px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 35px;
+    margin-inline: 170px;
+}
+.info-sectn input[type="submit"]:hover{
+    background-color: rgb(101, 101, 212);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+/* top-mail*/
+
+.top-mail{
+    text-align: center;
+    padding: 7px;
+}
+
+.top-mail i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(61, 61, 123);
+    font-size: 1.8rem;
+    border: 1px solid #dfdfdf;
+    background-color:  #ededed;
+    border-radius: 100%;
+}
+.top-mail i:hover{
+  cursor: pointer;
+}
+.call-box i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(61, 61, 123);
+    font-size: 1.8rem;
+    border: 1px solid #dfdfdf;
+    background-color:  #ededed;
+    border-radius: 100%;
+}
+
+.top-mail h4{
+  font-weight: 700;
+  color: #454444;
+  padding:3px 0px;
+}
+.call-box h4{
+  font-weight: 700;
+  color: #454444;
+  padding:3px 0px;
+}
+
+.email-box{
+    padding-block: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.call-box{
+    padding-block: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* footer */
+
+.solutionBg {
+    background: url('/img/bg1.webp') no-repeat;
+    background-size: cover;
+    padding: 140px 0px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.solutionBg::before {
+    content: "";
+    position: absolute;
+    background: rgba(36, 44, 56, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+
+}
+
+.solutionText {
+    font-style: italic;
+    width: 700px;
+    color: white;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
